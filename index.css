@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, rgb(215, 148, 22), rgb(223, 197, 50));
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.add-todo-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+#new-todo {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ffa500;
+  margin-right: 10px;
+  width: 70%;
+}
+
+#add-todo-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff8c00;
+  color: white;
+  cursor: pointer;
+}
+
+#add-todo-btn:hover {
+  background-color: #ff4500;
+}
+
+.todo-list-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-list {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.todo-title {
+  font-weight: bold;
+  color: #ff4500;
+}
+.todo-btn.complete {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.todo-btn.complete:hover {
+  background-color: #1cebcc; /* Lighter green on hover */
+}
+
+.todo-btn.delete {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+.todo-btn.delete:hover {
+  background-color: #eb1c98; /* Darker red on hover */
+}
+
+.todo-btn.update {
+  background-color: #2196f3; /* Blue */
+  color: white;
+}
+
+.todo-btn.update:hover {
+  background-color: #e2e907; /* Lighter blue on hover */
+}
+.todo-btn {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none; /* Remove border */
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.todo-list-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0; /* Adjust margin */
+}
+
+.todo-list {
+  flex: 1;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 10px; /* Add margin between the containers */
+}
+
+.todo-list h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+#incomplete-todo-list {
+  flex: 0 1 70%; /* 70% of the available space */
+}
+
+#completed-todo-list {
+  flex: 0 1 30%; /* 30% of the available space */
+}
+#refresh-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff8c00; /* Dark orange */
+  color: white;
+  cursor: pointer;
+  margin-left: 10px; /* Add space between Add button and Refresh button */
+}
+
+#refresh-btn:hover {
+  background-color: #ff4500; /* Darker orange for hover effect */
+}
